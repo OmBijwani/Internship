@@ -12,7 +12,7 @@ print("NAME: ",name)
 print("CLASS: ",Class)
 print("PERCENTAGE: ",percentage)
 
-#Question 3:
+#Question 5:
 if percentage >= 60:
     print("Grade A")
 elif percentage >= 50 and percentage < 60:
@@ -44,6 +44,7 @@ print(final.isspace())
 print(final.isnumeric())
 print(final.replace("e", "i"))
 
+#Question 4:
 x = 10
 
 print("Initial value:", x)
