@@ -1,26 +1,71 @@
-# Dictionary
-student = {
-    "name": "Om",
-    "age": 20,
-    "course": "Python"
-}
+#Question !:
+name = input("Whats your name?: ")
+Class = input("Whats your class?: ")
+physics = int(input("Enter marks in Physics: "))
+chemistry = int(input("Enter marks in Chemistry: "))
+maths = int(input("Enter marks in Maths: "))
+english = int(input("Enter marks in English: "))
+hindi = int(input("Enter marks in Hindi: "))
+total = physics + chemistry + maths + english + hindi
+percentage = (total/500)*100
+print("NAME: ",name)
+print("CLASS: ",Class)
+print("PERCENTAGE: ",percentage)
 
-print("Dictionary:", student)
-student["city"] = "Jaipur"
-student["age"] = 21
-print("Updated Dictionary:", student)
+#Question 5:
+if percentage >= 60:
+    print("Grade A")
+elif percentage >= 50 and percentage < 60:
+    print("Grade B")
+elif percentage >= 40 and percentage < 50:
+    print("Grade C")
+elif percentage >= 33 and percentage < 40:
+    print("Grade D")
+else:
+    print("Fail")
 
-#TUPLE 
-numbers = (10, 20, 30, 40, 50)
+#Question 2:
+string1 = input("Enter string 1: ")
+string2 = input("Enter string 2: ")
+final = string1 + string2
+print(final.lower())
+print(final.upper())
+print(final.title())
+print(final.swapcase())
+print(final.center(10))
+print(final.capitalize())
+print(final.casefold())
+print(final.count("y"))
+print(final.endswith("y"))
+print(final.find("y"))
+print(final.isalnum())
+print(final.isdigit())
+print(final.isspace())
+print(final.isnumeric())
+print(final.replace("e", "i"))
 
-print("Tuple:", numbers)
-print("First Element:", numbers[0])
-print("Length:", len(numbers))
+#Question 4:
+x = 10
 
-#SET 
-fruits = {"apple", "banana", "mango"}
+print("Initial value:", x)
 
-print("Set:", fruits)
-fruits.add("orange")
-fruits.add("apple")   
-print("Updated Set:", fruits)
+x += 5
+print("After += :", x)
+
+x -= 3
+print("After -= :", x)
+
+x *= 2
+print("After *= :", x)
+
+x /= 4
+print("After /= :", x)
+
+x %= 3
+print("After %= :", x)
+
+x //= 1
+print("After //= :", x)
+
+x **= 2
+print("After **= :", x)
